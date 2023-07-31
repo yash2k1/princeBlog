@@ -1,0 +1,181 @@
+.SingleAritcalHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 90px;
+  border-bottom: 2px solid rgb(225, 224, 224);
+}
+.SingleAritcalHeader .header {
+  display: flex;
+  width: fit-content;
+  margin: 0px;
+  height: fit-content;
+}
+.the {
+  font-size: 20px;
+}
+.siren {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 60px;
+  font: normal normal bold 61px Montserrat;
+}
+/*---------------- Single Aritcal Back------------- */
+
+.SingleAritcalBack {
+  width: fit-content;
+  height: 60px;
+  font-size: 40px;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.BackImg {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 50px;
+  margin: 7px 14px 0 0;
+  transform: rotateZ(90deg);
+}
+/* ------------SingleAritcal Heading------------- */
+.SingleAritcalHeading{
+display: flex;
+justify-content: center;
+}
+/* ------------SingleAritcal Body------------- */
+.SingleAritcalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ------------Posted by------------- */
+
+
+.SingleAritcalBody .PostedBy .ProfileName{
+    font-size: 1rem; 
+}
+.SingleAritcalBody .PostedBy .ProfileDate{
+    font-size: 1rem; 
+}
+/* -----------description--------- */
+.SingleAritcalDescription {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  position: relative;
+}
+/* ----------------show more------------ */
+.showMore{
+    position: absolute;
+    bottom:0;
+    left: 50%;    
+    transform: translate(-50%,50%);
+    background:linear-gradient( white,rgb(197, 195, 195) 50%);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showLess{
+    background: #0bb2ff;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showMore:hover,
+.showLess:hover{
+cursor: pointer;
+}
+/* -------------writer info------------------- */
+.writerInfo {
+  border-top: 2px solid rgb(232, 228, 228);
+  padding-top: 20px;
+  border-bottom: 2px solid rgb(232, 228, 228);
+}
+/* ----------------More From Siren------------------------- */
+.MoreFromSiren {
+  display: flex;
+  justify-content: space-around;
+  background: #fafafa;
+  border-top: 2px solid #d1cfcf;
+
+}
+.MoreFromSiren .type6 {
+  margin-top: 10px;
+  width: 32%;
+}
+.MoreFromSiren .ProfileDate {
+  font-size: 10px;
+}
+@media (max-width: 600px) {
+    /* ------------SingleAritcal Body------------- */
+.SingleAritcalBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  /* ----------------more from siren----------------- */
+  .MoreFromSiren {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+  }
+  .MoreFromSiren .type6 {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .the {
+    font-size: 10px;
+  }
+  .siren {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 60px;
+    font: normal normal bold 31px Montserrat;
+  }
+  /*---------------- Single Aritcal Back------------- */
+
+  .SingleAritcalBack {
+    width: fit-content;
+    height: 40px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  .BackImg {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 20px;
+    margin: 7px 14px 0 0;
+    transform: rotateZ(90deg);
+  }
+}

@@ -1,0 +1,31 @@
+.PagesHoc{
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+        width: 90%;
+        flex-wrap: wrap;
+}
+.topStoriesPage{
+    width: 50%;
+}
+.TopPostPage{
+    width: 50%;
+}
+@media (max-width:650px) {
+    .PagesHoc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+    }
+    .topStoriesPage{
+        width: 100%;
+        margin: 1px;
+    }
+    .TopPostPage{
+        width: 100%;
+        margin: 1px;
+
+    }
+}

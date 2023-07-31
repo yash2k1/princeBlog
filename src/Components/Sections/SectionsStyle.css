@@ -1,0 +1,132 @@
+/* ------------------TopStories------------------------ */
+.TopStories{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.TopStories>div:not(:nth-last-child(1),:nth-child(1)){
+    border-top: 1px solid rgb(197, 195, 195);
+}
+/* ------------------LatestArticle------------------------ */
+.LatestArticle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.TopPost >div:nth-child(1) .type5 .storieImages{
+    max-height: 250px;
+    max-width: 100%;
+    object-position: top;
+   
+}
+.TopPost >div:nth-child(1) .type5{
+    max-height: 300px;
+    max-width: 100%;
+    object-position: top;
+    margin: auto;
+}
+.LatestArticle >div:nth-child(1){
+  font-size: 28px;
+  color: darkblue;     
+}
+.LatestArticle >div:not(:nth-child(1)){
+  font-size: 22px; 
+}
+.LatestArticle >img{
+   margin: 50px 0;
+}
+.LatestArticle>div:not(:nth-last-child(1),:nth-child(1)){
+    border-top: 1px solid rgb(197, 195, 195);
+}
+/* ------------------Top Post------------------------ */
+.TopPost{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.TopPost >div:not(:nth-child(1)) .type5{
+/* color: aquamarine; */
+display: grid;
+grid-template-rows:50% 50%;
+grid-template-columns:30% 70%;
+
+}
+.TopPost >div:not(:nth-child(1)) .type5 .storieImages{
+    grid-area: 1/1/3/2;
+}
+.TopPost >div:not(:nth-child(1)) .type5 .storieDate{
+    grid-area: 2/2/3/3;
+    display: flex;
+    align-items: flex-end;
+}
+/* .TopPost >div:nth-child(1) .type5 .storieImages{
+    max-height: 300px;
+    max-width: 100%;
+    object-position: top;
+} */
+.adv{
+    /* width: 100%; */
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(197, 195, 195);
+    margin: 10px;
+}
+.TopPost>div:not(:nth-child(1)){
+    border-top: 1px solid rgb(197, 195, 195);
+}
+
+
+/*-----------------LatestStories---------------------*/
+.LatestStories,
+.TheLatest{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: ; */
+}
+
+@media (max-width:750px){
+    .LatestStories,
+    .TheLatest{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .LatestStories>div:not(:nth-child(1)),
+.TheLatest>div:not(:nth-child(1)){
+    border-top: 1px solid rgb(197, 195, 195);
+}
+}
+@media (max-width:600px){
+    .TopPost >div:nth-child(1) .type5{
+        max-height: 300px;
+        max-width: 100%;
+        object-position: top; 
+             
+    }
+    .TopPost >div:nth-child(1) .type5 .storieImages {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-height: 250px;
+        max-width: 80%;
+        height: 70%;
+        
+    } 
+    .adv{
+        display: none;
+       }
+
+    .LatestArticle{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin: auto;
+    }
+}
