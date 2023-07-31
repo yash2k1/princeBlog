@@ -55,7 +55,7 @@ const SingleArtical = () => {
     <img className="SingleAritcalImage" src={data[Id].images} alt="Not Found"/>
     <div className="SingleAritcalDescription">
       {data[Id].description.split(' ').slice(0,wordsToShow).join(' ')}
-     {(wordsToShow!=-1)? <div onClick={TextView} className="showMore">⬇️ Show More</div>:<div onClick={TextView} className="showLess">⬆️ Show Less</div>}
+     {(wordsToShow!==-1)? <div onClick={TextView} className="showMore">⬇️ Show More</div>:<div onClick={TextView} className="showLess">⬆️ Show Less</div>}
       </div>
     <div className="writerInfo">
     <span className="clap2">
