@@ -5,6 +5,10 @@
     width: 100%;
     
 }
+.TopStories img{
+  object-fit: cover;
+    
+}
 .TopStories>div:not(:nth-last-child(1),:nth-child(1)){
     border-top: 1px solid rgb(197, 195, 195);
 }

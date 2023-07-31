@@ -12,11 +12,11 @@ const PagesHoc = () => {
   <Navbar/>
     <div className='PagesHoc'>
   <div className="topStoriesPage">
-    <span >{props.name}</span>
+    <span className='TopStoriesPageSpan' >{props.name}</span>
   <EnhancedTopStories initialIds={props.initialIds} name={"TopStories"} length={6} loadMore={true} type={"type4"}/>
-
   </div>
 <div className="TopPostPage">
+<span >TopPost</span>
 <EnhancedTopPost initialIds={props.initialIds} name={"TopPost"} length={4} loadMore={false} type={"type5"} />
 </div>
     </div>
