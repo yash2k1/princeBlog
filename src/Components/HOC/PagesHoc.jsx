@@ -10,7 +10,7 @@ const PagesHoc = () => {
     return (
       <>
   <Navbar/>
-    <div className='PagesHoc'>
+    <div className='PagesHoc' id='PagesHoc'>
   <div className="topStoriesPage">
     <span className='TopStoriesPageSpan' >{props.name}</span>
   <EnhancedTopStories initialIds={props.initialIds} name={"TopStories"} length={6} loadMore={true} type={"type4"}/>

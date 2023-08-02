@@ -54,7 +54,7 @@ let count=0;
  
    </div>
     {
-    (props.name==="LatestArticle"||props.name==="TopPost")?<WraperComponent img={data[0].images}/>:""
+    (props.name==="TopPost")?<WraperComponent />:""
   }
     </div>
   ) 

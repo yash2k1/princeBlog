@@ -1,12 +1,13 @@
-import React from 'react'
-import SectionHoc from '../HOC/SectionHoc'
-
-const LatestArticle = (props) => {
+import React, { useContext } from 'react'
+import { NewsData } from '../Assets/NewsData'
+const LatestArticle = () => {
+  const data=useContext(NewsData)
+console.log(data)
   return ( 
-    <img src={props.img} alt="not found" />
+  
+    <img src={data[Math.floor(Math.random()*74)+1].images} alt="not found" className='LatestArticleImg' />
   )
 }
-const EnhancedLatestArticle=SectionHoc(LatestArticle);
-export default EnhancedLatestArticle;
+export default LatestArticle;
 
 // export default SectionHoc(LatestArticle);

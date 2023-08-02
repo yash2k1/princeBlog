@@ -3,6 +3,7 @@ import HeaderImage from '../Components/ImageBar/HeaderImage'
 import './HomeStyle.css'
 import FilterStoriesData from '../Components/FilterStoriesData'
 import Navbar from '../Components/Header/Navbar'
+import LatestArticle from '../Components/Sections/LatestArticle'
 function Home() {
 const random=()=>{
  return Math.floor((Math.random()*74)+1);
@@ -19,7 +20,6 @@ const random=()=>{
   <FilterStoriesData type={"type3"} id={random()} />       
   <FilterStoriesData type={"type3"} id={random()} />       
   <FilterStoriesData type={"type3"} id={random()} />       
-
 </div>
 
 </div>
@@ -32,6 +32,8 @@ const random=()=>{
 <FilterStoriesData type={"type4"} id={random()} />       
 <FilterStoriesData type={"type4"} id={random()} />       
 <FilterStoriesData type={"type4"} id={random()} />       
+<LatestArticle />
+
  </div>   
 
 
@@ -39,6 +41,7 @@ const random=()=>{
 <div className="midSecond">
 <h1> TopPost</h1>
 <div className='TopPost'>
+<img className="adv" style={{objectFit:"cover" ,height:"550px"}} alt="not found"src="https://mediasamosa.com/wp-content/uploads/2020/01/printad-696x985.jpg"/>
   <div>
 <FilterStoriesData type={"type5"} id={random()} counter={"1"} />       
 </div>

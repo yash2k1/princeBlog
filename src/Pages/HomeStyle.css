@@ -9,6 +9,11 @@
 .mid .midSecond{
     width: 50%;
 }
+.mid .midSecond .adv{
+    height: 456px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
 .mid .midSecond .SectionHoc{
     display: flex;
 flex-direction: column-reverse;
