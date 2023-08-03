@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams ,useLocation} from "react-router-dom";
 import Top from "../Header/Top";
 import { NewsData } from "../Assets/NewsData";
 import './SingleAritcalStyle.css'
@@ -9,17 +9,41 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FilterStoriesData from "../FilterStoriesData";
+
 const SingleArtical = () => {
   const NewsArrayIndex = useParams();
-  const Id=NewsArrayIndex.NewsId-1;
-  const data = useContext(NewsData);
-  // console.log(data[NewsId-1].categories);
-  console.log(Id);
+  const path = useLocation().pathname;//for back functionality
+  const Id=NewsArrayIndex.NewsId-1;//for selecting that arr from Context API
+  const data = useContext(NewsData);//form context API
+console.log(data[0].id)
+console.log(data[0].categories)
+console.log(data[0].date)
+console.log(data[0].description)
+console.log(data[0].heading)
+//   const [fromHome,setFormHome]=useState(false)
+// (  path.includes(
+//   "Bollywood"
+// || "Hollywood"
+// ||"Technology"
+// ||"Fitness"
+// ||"Food"))?(
+//   setFormHome(false),
+//   console.log(fromHome)
 
+// ):(
+//   setFormHome(true),
+//   console.log(fromHome)
+// )
+// (!fromHome)?data[Id]?.categories:""
+  // console.log(data[NewsId-1].categories);
+  // console.log(Id);
+  // console.log(path);
+
+  // for Blog in the single page
  const [wordsToShow,setWordsToShow]=useState(50);
  const TextView=()=>{
   (wordsToShow!==-1)?setWordsToShow(-1)://increase text
-  setWordsToShow(50);//increase decrese text
+  setWordsToShow(50);// decrese text
  } 
   return (
     <div>
@@ -69,9 +93,9 @@ const SingleArtical = () => {
       </div>
     
   <div className="MoreFromSiren">
-    <FilterStoriesData type={"type6"} id={Id} />       
-    <FilterStoriesData type={"type6"} id={Id+1} />       
     <FilterStoriesData type={"type6"} id={Id+2} />       
+    <FilterStoriesData type={"type6"} id={Id+3} />       
+    <FilterStoriesData type={"type6"} id={Id+4} />       
      
   </div>
    

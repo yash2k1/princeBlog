@@ -6,44 +6,50 @@
     width: 90vw;
     height: 400px;
     margin: auto;
-    gap: 20px;
+    gap: 25px;
     margin-top: 30px;
 }
 img{
     object-fit: contain;
     height: 100%;
     width: 100%;
+    border-radius:10px;
 }
 
-.HeaderImage1{
-    /* object-fit: cover; */
+.HeaderImg{
+    object-fit: cover;
     object-position: center;
+}
+.HeaderImage1{
+ 
 position: relative;
 grid-row: 1/3;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .HeaderImage2{
-object-position: center;
-/* object-fit: cover; */
+
 position: relative;
 
 }
 .HeaderImage3{
-object-position: center;
-/* object-fit: cover; */
+
 position: relative;
 }
+
 /* -----------------Header categories---------------------- */
-.HeaderCat{
+.headerText{
 position: absolute;
 /* background: #000000; */
 background: rgba(2, 166, 255,0.3);
 color: white;
 font-style: italic;
 font-size: 20px;
-left: 50%;
+left: 0%;
 top: 50%;
 /* transform: translateX(-50%); */
-transform: translate(-50%,-50%);
+/* transform: translate(-50%,-50%); */
 display: flex;
 flex-direction: column;
 

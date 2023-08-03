@@ -1,12 +1,16 @@
 import React from 'react'
-import SectionHoc from '../HOC/SectionHoc'
-
+import FilterStoriesData from '../FilterStoriesData';
 const TheLatest = () => {
+  const random=()=>{
+    return Math.floor((Math.random()*74)+1);
+   }
   return (
-    <div>
-      TheLatest
-    </div>
+    <div className='TheLatest'>
+
+  <FilterStoriesData type={"type3"} id={random()} />       
+  <FilterStoriesData type={"type3"} id={random()} />       
+  <FilterStoriesData type={"type3"} id={random()} />       
+</div>
   )
 }
-const EnhancedTheLatest=SectionHoc(TheLatest);
-export default EnhancedTheLatest;
+export default TheLatest;

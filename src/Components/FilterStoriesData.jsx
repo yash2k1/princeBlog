@@ -4,7 +4,7 @@ import Stories from './GenericComonents/Stories';
 import ErrorHandler from '../Pages/ErrorHandler'
 function FilterStoriesData(props) {
   const data=useContext(NewsData)[props.id-1];
-
+ console.log(props)
 //   console.log("nic",data.heading,props.type)
 if(props.type==="type1"){
     return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} postBy={"fs"} categories={data.categories} />

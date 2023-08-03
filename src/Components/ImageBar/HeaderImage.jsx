@@ -7,18 +7,21 @@ const data=useContext(NewsData)
 const randomGenerator=()=>{
   return Math.floor(Math.random()*74) +1;
 }
-const [image1,setImage1]=useState(data[randomGenerator()].images );
-const [image2,setImage2]=useState(data[randomGenerator()].images );
-const [image3,setImage3]=useState(data[randomGenerator()].images );
+const [dataObj1,setDataObj1]=useState(data[randomGenerator()]);
+const [dataObj2,setDataObj2]=useState(data[randomGenerator()]);
+const [dataObj3,setDataObj3]=useState(data[randomGenerator()]);
 
 useEffect(()=>{
-  setTimeout(()=>{
-    setImage1(data[randomGenerator()].images);
-    setImage2(data[randomGenerator()].images);
-    setImage3(data[randomGenerator()].images);
+ const ChangeImg= setTimeout(()=>{
+    setDataObj1(data[randomGenerator()]);
+    setDataObj2(data[randomGenerator()]);
+    setDataObj3(data[randomGenerator()]);
   },5000)
-
-},[image1,image2,image3,data])
+  return ()=>{
+    clearTimeout(ChangeImg)
+  }
+}
+,[dataObj1,dataObj2,dataObj3,data])
 
 // const MemorisedNewsData=useMemo(()=> useContext(NewsData)
 // ,[])
@@ -51,10 +54,32 @@ useEffect(()=>{
 
   return (
     <div className='HeaderImage'>
-      
- <img src={image1} alt="HeaderImage1" className='HeaderImage1' />
- <img src={image2} alt="HeaderImage2" className='HeaderImage2' />
- <img src={image3} alt="HeaderImage3" className='HeaderImage3' />
+      {/* HeaderImage1 */}
+ <div className='HeaderImage1'>
+  <img src={dataObj1.images} alt="HeaderImage1"  className='HeaderImg'/>
+  <span className='headerText'>
+  <span>{dataObj1.heading.slice(0,30)+"..."}</span>  
+   <span> {dataObj1.date.slice(1)}</span>
+  </span>
+  </div>
+  {/* HeaderImage2 */}
+ <div className='HeaderImage2'>
+  <img src={dataObj2.images} alt="HeaderImage2"  className='HeaderImg'/>
+  <span className='headerText'>
+
+    <span>{dataObj2.heading.slice(0,25)+"..."}</span>  
+   <span> {dataObj2.date.slice(1)}</span>
+  </span>
+  </div>
+  {/* HeaderImage3 */}
+ <div className='HeaderImage3'>
+  <img src={dataObj3.images} alt="HeaderImage3"  className='HeaderImg'/>
+  <span className='headerText'>
+  <span>{dataObj3.heading.slice(0,25)+"..."}</span>  
+   <span> {dataObj3.date.slice(1)}</span>
+
+  </span>
+  </div>
     
     </div>
   )

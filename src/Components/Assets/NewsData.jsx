@@ -1,19 +1,9 @@
 import { createContext } from "react";
 
 export const NewsData = createContext([
+
   {
     id: "1",
-    heading:
-      "OMG 2: Akshay Kumar film stuck in a limbo; CBFC Revising Committee and makers in a deadlock over 20 cuts and adult certification?",
-    images:
-      "https://st1.bollywoodlife.com/wp-content/uploads/2023/07/FotoJet-2023-07-25T133128.528-1.jpg?impolicy=Medium_Widthonly&w=1280&h=900",
-    description:
-      "Bollywood experts had set their sights on Gadar 2 and OMG 2 clashing at the box office on the Independence Day weekend. But it looks like Sunny Deol and Ameesha Patel's movie will have a clear run because OMG 2 makers are reportedly upset with the CBFC. After the whole hullabaloo around Adipurush, CBFC has become more careful about films with religious context. It has been reported by Bollywood Hungama that the Revising Committee has suggested 20 cuts to the makers of OMG 2. These also include audio and video deletions. Moreover, they have suggested that they go in for an adults only certification for the movie. Initially, there were rumours that OMG 2 had a LGBTQ angle but the makers denied the same. Pankaj Tripathi told people not to believe anything that was being said. But it looks like the film does have a theme of sex education somewhere. It seems the makers are unhappy with the cuts as they feel it will ruin the essence of the movie. The source told the portal, They are also not okay with an A certificate. After all, they feel that the topic of sex education should be seen by people of all ages. The first installment of OMG came out in 2012, and kids loved the film. The makers feel it is not right to have an adult rating for a kid-friendly franchise. Also Read - Decoding Akshay Kumar's journey: Action star, comedy king, pioneer of socially conscious films, how reinvention helped in box office success BL Specials",
-    categories: "Bollywood",
-    date: "/ Dec 31 2019",
-  },
-  {
-    id: "2",
     heading:
       "Ram Charan’s Rangasthalam beats Yash’s KGF 2 at Japan’s box office; here’s how much they collected",
     images:
@@ -22,6 +12,17 @@ export const NewsData = createContext([
       "Quite a good number of Indian films are making their way to the theaters in Japan. Thanks to Rajamouli's Baahubali and RRR that opened the gates a little more for Indian cinema. Ram Charan has fans in Japan who are high in number and as they showed interest in watching his previous films, Rangasthalam was released at the theaters in Japan recently and the film is doing amazingly well at the box office there. The same is the case with Yash's KGF. Both the chapters of the film have been released in Japan and even this film is doing amazingly well at the box office. Also Read - Ram Charan and Upasana’s daughter Klin Kaara has a Chenchu connection; here’s how Rangasthalam has achieved an impressive milestone at the Japanese box office, crossing the 1 crore mark in Indian currency. The movie's extraordinary word-of-mouth and positive reception have contributed to its success, and it is expected to continue its triumphant theatrical run, potentially even surpassing the popularity of the KGF series in Japan. Also Read - Thalapathy Vijay maintains TOP spot beating Shah Rukh Khan, Prabhas and other actors to be the most popular stars in India [Check List] The film made its debut in Japan on 14th July, making an impressive 2.5 million yen on its opening day from 70 screens. The strong initial response prompted the allocation of more screens in the following days, further expanding its reach across the country. It's impressive to see that Rangasthalam has outperformed both KGF Chapter 1 and KGF Chapter 2 in bookings and box office totals in Japan. Rangasthalam opened to a profit of 2.5 million yen on around 70 screens in Japan, and its positive word-of-mouth among Japanese viewers indicates a successful run is expected. The entertainment company Space Box has been making significant strides in the Japanese film market by releasing various Indian films. Notable among these releases are movies like Ponniyin Selvan 1&2, Kantara, Waltair Veerayya, Bhool Bhulaiyaa 2, and many others. Adding to their impressive portfolio, Space Box has also taken the responsibility of releasing the blockbuster Telugu film Rangasthalam in Japan.",
     categories: "Bollywood",
     date: "/ Dec 21 2022",
+  },
+  {
+    id: "2",
+    heading:
+      "OMG 2: Akshay Kumar film stuck in a limbo; CBFC Revising Committee and makers in a deadlock over 20 cuts and adult certification?",
+    images:
+      "https://st1.bollywoodlife.com/wp-content/uploads/2023/07/FotoJet-2023-07-25T133128.528-1.jpg?impolicy=Medium_Widthonly&w=1280&h=900",
+    description:
+      "Bollywood experts had set their sights on Gadar 2 and OMG 2 clashing at the box office on the Independence Day weekend. But it looks like Sunny Deol and Ameesha Patel's movie will have a clear run because OMG 2 makers are reportedly upset with the CBFC. After the whole hullabaloo around Adipurush, CBFC has become more careful about films with religious context. It has been reported by Bollywood Hungama that the Revising Committee has suggested 20 cuts to the makers of OMG 2. These also include audio and video deletions. Moreover, they have suggested that they go in for an adults only certification for the movie. Initially, there were rumours that OMG 2 had a LGBTQ angle but the makers denied the same. Pankaj Tripathi told people not to believe anything that was being said. But it looks like the film does have a theme of sex education somewhere. It seems the makers are unhappy with the cuts as they feel it will ruin the essence of the movie. The source told the portal, They are also not okay with an A certificate. After all, they feel that the topic of sex education should be seen by people of all ages. The first installment of OMG came out in 2012, and kids loved the film. The makers feel it is not right to have an adult rating for a kid-friendly franchise. Also Read - Decoding Akshay Kumar's journey: Action star, comedy king, pioneer of socially conscious films, how reinvention helped in box office success BL Specials",
+    categories: "Bollywood",
+    date: "/ Dec 31 2019",
   },
   {
     id: "3",

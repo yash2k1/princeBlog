@@ -11,7 +11,7 @@ const Stories = (props) => {
 const navigate=useNavigate();
 // props=date,heading.type,postBy,cat,description,id
 const OpenSingleArtical=()=>{
-
+console.log(props)
   navigate(`/${props?.categories}/${props?.id}`)
 }
   return (

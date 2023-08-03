@@ -4,6 +4,8 @@ import './HomeStyle.css'
 import FilterStoriesData from '../Components/FilterStoriesData'
 import Navbar from '../Components/Header/Navbar'
 import LatestArticle from '../Components/Sections/LatestArticle'
+import TheLatest from '../Components/Sections/TheLatest'
+import LatestStories from '../Components/Sections/LatestStories'
 function Home() {
 const random=()=>{
  return Math.floor((Math.random()*74)+1);
@@ -15,26 +17,13 @@ const random=()=>{
 <HeaderImage/>
 <div className="upper">
 <h1>The Latest</h1>
-  <div className='TheLatest'>
-
-  <FilterStoriesData type={"type3"} id={random()} />       
-  <FilterStoriesData type={"type3"} id={random()} />       
-  <FilterStoriesData type={"type3"} id={random()} />       
-</div>
+<TheLatest/>
 
 </div>
   <div className="mid">
 <div className="midFirst">
-<h1> Latest Article</h1>
-<div className='LatestArticle'>
-
-<FilterStoriesData type={"type4"} id={random()} />       
-<FilterStoriesData type={"type4"} id={random()} />       
-<FilterStoriesData type={"type4"} id={random()} />       
-<FilterStoriesData type={"type4"} id={random()} />       
+  
 <LatestArticle />
-
- </div>   
 
 
 </div>
@@ -58,13 +47,7 @@ const random=()=>{
 </div>
   </div>
   <div className="bottom">
-    <h1>LatestStories</h1>
-<div className='LatestStories'>
-  <FilterStoriesData type={"type2"} id={random()} />       
-  <FilterStoriesData type={"type2"} id={random()} />       
-  <FilterStoriesData type={"type2"} id={random()} />       
-
-  </div>
+<LatestStories/>
   </div>
 
  </>
