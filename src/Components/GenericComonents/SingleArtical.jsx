@@ -15,11 +15,12 @@ const SingleArtical = () => {
   const path = useLocation().pathname;//for back functionality
   const Id=NewsArrayIndex.NewsId-1;//for selecting that arr from Context API
   const data = useContext(NewsData);//form context API
-console.log(data[0].id)
-console.log(data[0].categories)
-console.log(data[0].date)
-console.log(data[0].description)
-console.log(data[0].heading)
+  
+// console.log(data[0].id)
+// console.log(data[0].categories)
+// console.log(data[0].date)
+// console.log(data[0].description)
+// console.log(data[0].heading)
 //   const [fromHome,setFormHome]=useState(false)
 // (  path.includes(
 //   "Bollywood"
@@ -45,6 +46,14 @@ console.log(data[0].heading)
   (wordsToShow!==-1)?setWordsToShow(-1)://increase text
   setWordsToShow(50);// decrese text
  } 
+
+
+//  more from siren random image logic 
+const RandomImg=()=>{
+  
+    return Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+     
+}
   return (
     <div>
       <div className="SingleAritcalHeader">
@@ -79,7 +88,7 @@ console.log(data[0].heading)
     <img className="SingleAritcalImage" src={data[Id].images} alt="Not Found"/>
     <div className="SingleAritcalDescription">
       {data[Id].description.split(' ').slice(0,wordsToShow).join(' ')}
-     {(wordsToShow!==-1)? <div onClick={TextView} className="showMore">⬇️ Show More</div>:<div onClick={TextView} className="showLess">⬆️ Show Less</div>}
+     {(wordsToShow!==-1)? <div onClick={TextView} className="showMore">⬇️ Show More</div>:<div onClick={TextView} className="showLess" >⬆️ Show Less</div>}
       </div>
     <div className="writerInfo">
     <span className="clap2">
@@ -92,10 +101,13 @@ console.log(data[0].heading)
     </div>  
       </div>
     
+
+
+
   <div className="MoreFromSiren">
-    <FilterStoriesData type={"type6"} id={Id+2} />       
-    <FilterStoriesData type={"type6"} id={Id+3} />       
-    <FilterStoriesData type={"type6"} id={Id+4} />       
+    <FilterStoriesData type={"type6"} id={RandomImg()} />       
+    <FilterStoriesData type={"type6"} id={RandomImg()} />       
+    <FilterStoriesData type={"type6"} id={RandomImg()} />       
      
   </div>
    

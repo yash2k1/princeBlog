@@ -4,6 +4,7 @@ import EnhancedTopPost from '../Sections/TopPost';
 import './PagesHocStyle.css'
 import Navbar from '../Header/Navbar';
 
+ 
 const PagesHoc = () => {
   const Hoc=(props)=>{
     
