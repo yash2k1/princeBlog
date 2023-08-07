@@ -37,6 +37,10 @@
   color: white;
   text-decoration: none;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 @media (max-width:750px) {
   .footer {
    flex-direction: column;

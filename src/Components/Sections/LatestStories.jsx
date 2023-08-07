@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionHoc from '../HOC/SectionHoc'
 import FilterStoriesData from '../FilterStoriesData';
 const LatestStories = () => {
   const random=()=>{
