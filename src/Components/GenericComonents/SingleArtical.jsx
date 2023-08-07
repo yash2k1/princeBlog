@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, useParams ,useLocation} from "react-router-dom";
+import {  useParams , useNavigate} from "react-router-dom";
 import Top from "../Header/Top";
 import { NewsData } from "../Assets/NewsData";
 import './SingleAritcalStyle.css'
@@ -12,33 +12,11 @@ import FilterStoriesData from "../FilterStoriesData";
 
 const SingleArtical = () => {
   const NewsArrayIndex = useParams();
-  const path = useLocation().pathname;//for back functionality
+  const navigate=useNavigate();//for back functionality
   const Id=NewsArrayIndex.NewsId-1;//for selecting that arr from Context API
   const data = useContext(NewsData);//form context API
   
-// console.log(data[0].id)
-// console.log(data[0].categories)
-// console.log(data[0].date)
-// console.log(data[0].description)
-// console.log(data[0].heading)
-//   const [fromHome,setFormHome]=useState(false)
-// (  path.includes(
-//   "Bollywood"
-// || "Hollywood"
-// ||"Technology"
-// ||"Fitness"
-// ||"Food"))?(
-//   setFormHome(false),
-//   console.log(fromHome)
 
-// ):(
-//   setFormHome(true),
-//   console.log(fromHome)
-// )
-// (!fromHome)?data[Id]?.categories:""
-  // console.log(data[NewsId-1].categories);
-  // console.log(Id);
-  // console.log(path);
 
   // for Blog in the single page
  const [wordsToShow,setWordsToShow]=useState(50);
@@ -46,20 +24,23 @@ const SingleArtical = () => {
   (wordsToShow!==-1)?setWordsToShow(-1)://increase text
   setWordsToShow(50);// decrese text
  } 
-
-
+ 
 //  more from siren random image logic 
 const RandomImg=()=>{
   
     return Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
      
 }
+//for back functionality
+function handleBack(){
+  navigate(-1);
+}
   return (
     <div>
       <div className="SingleAritcalHeader">
-        <Link className="SingleAritcalBack" to={"/" + data[Id]?.categories}>
+        <button className="SingleAritcalBack" onClick={handleBack}>
           <img className="BackImg" src="/images/arrow@2x.png" alt="not found" />
-          Back</Link>
+          Back</button>
         <Top />
 
       </div>

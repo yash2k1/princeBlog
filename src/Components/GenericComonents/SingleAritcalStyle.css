@@ -6,6 +6,7 @@
   height: 90px;
   border-bottom: 2px solid rgb(225, 224, 224);
 }
+
 .SingleAritcalHeader .header {
   display: flex;
   width: fit-content;
@@ -33,6 +34,11 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
+  border: 0px;
+  background: transparent;
+}
+.SingleAritcalBack:hover {
+ cursor: pointer;
 }
 .BackImg {
   display: flex;
