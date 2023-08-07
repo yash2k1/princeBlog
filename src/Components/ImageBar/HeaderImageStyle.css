@@ -10,15 +10,18 @@
     margin-top: 30px;
 }
 img{
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    border-radius:10px;
+    /* border-radius:10px; */
 }
 
 .HeaderImg{
     object-fit: cover;
     object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius:10px;
 }
 .HeaderImage1{
  

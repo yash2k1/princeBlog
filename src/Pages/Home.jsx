@@ -7,6 +7,7 @@ import LatestArticle from '../Components/Sections/LatestArticle'
 import TheLatest from '../Components/Sections/TheLatest'
 import LatestStories from '../Components/Sections/LatestStories'
 import { Margin } from '@mui/icons-material'
+import TopPost from '../Components/Sections/TopPost'
 function Home() {
 const random=()=>{
  return Math.floor((Math.random()*74)+1);
@@ -31,21 +32,11 @@ const random=()=>{
 <div className="midSecond">
 <h1> TopPost</h1>
 <div className='TopPost'>
-<iframe src="https://www.youtube.com/embed/cgmcVz0VBDM?autoplay=1&mute=1" style={{marginRight:"10px"} }height={550} allow='autoplay;' title='video'></iframe>
+<iframe className='adv' src="https://www.youtube.com/embed/cgmcVz0VBDM?autoplay=1&mute=1" style={{marginRight:"10px"} }height={550} allow='autoplay;' title='video'></iframe>
 
 {/* <img className="adv" style={{objectFit:"cover" ,height:"550px"}} alt="not found"src="https://mediasamosa.com/wp-content/uploads/2020/01/printad-696x985.jpg"/> */}
-  <div>
-<FilterStoriesData type={"type5"} id={random()} counter={"1"} />       
-</div>
-<div>
-<FilterStoriesData type={"type5"} id={random()} counter={"2"} />       
-</div>
-<div>
-<FilterStoriesData type={"type5"} id={random()} counter={"3"} />       
-</div>
-<div>
-<FilterStoriesData type={"type5"} id={random()} counter={"4"} />       
-</div>
+<TopPost isHome={true} initialIds={1}/>
+
 </div>
 </div>
   </div>

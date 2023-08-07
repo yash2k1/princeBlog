@@ -1,8 +1,9 @@
 import React from 'react'
-import EnhancedTopStories from '../Sections/TopStories';
-import EnhancedTopPost from '../Sections/TopPost';
+
 import './PagesHocStyle.css'
 import Navbar from '../Header/Navbar';
+import TopStories from '../Sections/TopStories';
+import TopPost from '../Sections/TopPost';
 
  
 const PagesHoc = () => {
@@ -14,11 +15,13 @@ const PagesHoc = () => {
     <div className='PagesHoc' id='PagesHoc'>
   <div className="topStoriesPage">
     <span className='TopStoriesPageSpan' >{props.name}</span>
-  <EnhancedTopStories initialIds={props.initialIds} name={"TopStories"} length={6} loadMore={true} type={"type4"}/>
+  <TopStories initialIds={props.initialIds}/>
   </div>
 <div className="TopPostPage">
 <span >TopPost</span>
-<EnhancedTopPost initialIds={props.initialIds} name={"TopPost"} length={4} loadMore={false} type={"type5"} />
+<TopPost initialIds={props.initialIds}/>
+<img className="adv" style={{objectFit:"contain" ,height:"300px"}} alt="not found"src="https://mediasamosa.com/wp-content/uploads/2020/01/printad-696x985.jpg"/>
+
 </div>
     </div>
 </>

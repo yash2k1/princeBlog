@@ -1,12 +1,37 @@
-import React from 'react'
-import SectionHoc from '../HOC/SectionHoc'
+import React,{useContext,useState} from 'react'
+import { NewsData } from '../Assets/NewsData';
+import '../Sections/SectionsStyle.css'
+import FilterStoriesData from '../FilterStoriesData';
+function TopPost(props) {
+const data=useContext(NewsData);// getting news data 
 
-function TopPost() {
-  return (
-    <img className="adv" style={{objectFit:"contain" ,height:"300px",}} alt="not found"src="https://mediasamosa.com/wp-content/uploads/2020/01/printad-696x985.jpg"/>
+    // console.log(count)
+    function generateRandom(){
+      return (props.isHome)?props?.initialIds+Math.floor(Math.random()*74): props?.initialIds+Math.floor(Math.random()*14)
+    }
+    return (
+    <div className="TopPost">
+    
+  
 
-   
-  )
+        <div>
+    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"1"} />       
+     </div>
+        <div>
+    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"2"} />       
+     </div>
+        <div>
+    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"3"} />       
+     </div>
+        <div>
+    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"4"} />       
+     </div>
+      
+      
+    
+     
+  </div>
+ 
+  ) 
 }
-const EnhancedTopPost=SectionHoc(TopPost);
-export default EnhancedTopPost;
+export default TopPost;

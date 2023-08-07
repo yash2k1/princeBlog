@@ -14,6 +14,7 @@ const OpenSingleArtical=()=>{
 console.log(props)
   navigate(`/${props?.categories}/${props?.id}`)
 }
+console.log(props.counter)
   return (
     
     <div className={props.type}>

@@ -9,6 +9,7 @@
   align-items: center;
   /* border: 2px solid black; */
   margin: 20px;
+  padding-top: 5px;
 }
 .type1 img,
 .type3 img {
@@ -26,6 +27,8 @@
   justify-content: space-between;
   /* border: 2px solid black; */
   margin: 20px;
+  padding-top: 5px;
+
 }
 .type2 img {
   display: none;
@@ -37,6 +40,8 @@
   grid-template-rows: 33% 34% 33%;
   /* max-width: 350px; */
   height: 150px;
+  padding-top: 5px;
+
 }
 .type4 .storieImages {
   grid-area: 1/1/4/2;
@@ -69,6 +74,8 @@
 } */
 .type5 {
   position: relative;
+  padding-top: 5px;
+
 }
 
 .storieCounter {
@@ -86,6 +93,8 @@
   display: grid;
   grid-template-rows: 60% 20% 20%;
   max-width: 250px;
+  padding-top: 5px;
+
 }
 .type6 .storieImages {
   height: 100%;
