@@ -1,17 +1,13 @@
 import React from 'react'
 import HeaderImage from '../Components/ImageBar/HeaderImage'
 import './HomeStyle.css'
-import FilterStoriesData from '../Components/FilterStoriesData'
 import Navbar from '../Components/Header/Navbar'
 import LatestArticle from '../Components/Sections/LatestArticle'
 import TheLatest from '../Components/Sections/TheLatest'
 import LatestStories from '../Components/Sections/LatestStories'
-import { Margin } from '@mui/icons-material'
 import TopPost from '../Components/Sections/TopPost'
 function Home() {
-const random=()=>{
- return Math.floor((Math.random()*74)+1);
-}
+
   return (
 
  <>

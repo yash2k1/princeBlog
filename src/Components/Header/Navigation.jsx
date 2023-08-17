@@ -29,12 +29,12 @@ function Navigation() {
  <div className={className}></div>
  </div>
  <div className={navClassName}>
-    <NavLink  onClick={handleClick} to='/'  className='nonActiveNav'  activeClass="active">Home</NavLink>
-    <NavLink  onClick={handleClick} to='/Bollywood'  className='nonActiveNav'  activeClass="active">Bollywood</NavLink>
-    <NavLink  onClick={handleClick} to='/Hollywood'  className='nonActiveNav' activeClass="active">Hollywood</NavLink>
-    <NavLink  onClick={handleClick} to='/Technology' className='nonActiveNav' activeClass="active">Technology</NavLink>
-    <NavLink  onClick={handleClick} to='/Fitness' className='nonActiveNav' activeClass="active">Fitness</NavLink>
-    <NavLink  onClick={handleClick} to='/Food' className='nonActiveNav' activeClass="active">Food</NavLink>
+    <NavLink  onClick={handleClick} to='/'          style={({ isActive }) => ({  color: isActive ? 'rgb(20, 166, 239)' : 'black' })} >Home</NavLink>
+    <NavLink  onClick={handleClick} to='/Bollywood' style={({ isActive }) => ({  color: isActive ? 'rgb(20, 166, 239)' : 'black' })} >Bollywood</NavLink>
+    <NavLink  onClick={handleClick} to='/Hollywood' style={({ isActive }) => ({  color: isActive ? 'rgb(20, 166, 239)' : 'black' })} >Hollywood</NavLink>
+    <NavLink  onClick={handleClick} to='/Technology'style={({ isActive }) => ({  color: isActive ? 'rgb(20, 166, 239)' : 'black' })} >Technology</NavLink>
+    <NavLink  onClick={handleClick} to='/Fitness'   style={({ isActive }) => ({  color: isActive ? 'rgb(20, 166, 239)' : 'black' })} >Fitness</NavLink>
+    <NavLink  onClick={handleClick} to='/Food'      style={({ isActive }) => ({  color: isActive ? 'rgb(20, 166, 239)' : 'black' })} >Food</NavLink>
   </div>
 
 

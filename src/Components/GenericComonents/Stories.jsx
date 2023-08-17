@@ -11,10 +11,10 @@ const Stories = (props) => {
 const navigate=useNavigate();
 // props=date,heading.type,postBy,cat,description,id
 const OpenSingleArtical=()=>{
-console.log(props)
+// console.log(props)
   navigate(`/${props?.categories}/${props?.id}`)
 }
-console.log(props.counter)
+// console.log(props.counter)
   return (
     
     <div className={props.type}>

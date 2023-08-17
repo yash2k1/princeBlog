@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 100%;
 }
+
 .TopStories img {
   object-fit: cover;
 }
@@ -16,18 +17,7 @@
   flex-direction: column;
   width: 100%;
 }
-.TopPost > div:nth-child(1) .type5 .storieImages {
-  max-height: 250px;
-  max-width: 100%;
-  object-position: top;
-  object-fit: cover;
-}
-.TopPost > div:nth-child(1) .type5 {
-  max-height: 300px;
-  max-width: 100%;
-  object-position: top;
-  margin: auto;
-}
+
 .LatestArticle > div:nth-child(1) {
   font-size: 28px;
   /* color: darkblue; */
@@ -53,6 +43,23 @@
   flex-direction: column;
   width: 100%;
   /* border: 1px solid black; */
+}
+.TopPost .storieHeading {
+  font-weight: bold;
+  width: 80%;
+}
+
+.TopPost > div:nth-child(1) .type5 .storieImages {
+  max-height: 250px;
+  max-width: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+.TopPost > div:nth-child(1) .type5 {
+  max-height: 300px;
+  max-width: 100%;
+  object-position: top;
+  margin: auto;
 }
 .TopPost > div:not(:nth-child(1)) .type5 {
   /* color: aquamarine; */
@@ -97,7 +104,19 @@ color: aqua;
   justify-content: space-around;
   /* align-items: ; */
 }
+.LatestStories .type2:hover,
+.TheLatest .type3:hover{
+  box-shadow: 4px 2px 4px 0.7px rgb(182, 176, 176);
+  transform: translate(2px,-2px);
+  border-radius:20px ;
+ padding: 4px;
 
+  }
+/* .LatestStories .type2 img,
+.TheLatest .type3 img{
+  border-radius:20px ;
+
+  } */
 @media (max-width: 750px) {
   .LatestStories,
   .TheLatest {

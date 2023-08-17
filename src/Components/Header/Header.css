@@ -41,15 +41,7 @@ cursor: pointer;
   box-shadow: 0px 0.3px 0.5px 0px grey;
 }
 
-/*---------------- for NavBar------------- */
 
-.nonActiveNav {
-  color: black;
-  text-decoration: none;
-}
-.active {
-  color: rgb(20, 166, 239);
-}
 
 /* -------------for hamburger---------------- */
 .hamburger {
