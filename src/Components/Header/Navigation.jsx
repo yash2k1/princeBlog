@@ -10,7 +10,7 @@ function Navigation() {
 
     const handleClick=()=>{
         setIsClick(!isClick);
-        console.log("click" ,isClick);
+      
         if(!isClick) {
           setClassName('openHamburger')
            setNavClassName('openNav')

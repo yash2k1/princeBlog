@@ -21,7 +21,7 @@ const SingleArtical = () => {
   // for Blog in the single page
  const [wordsToShow,setWordsToShow]=useState(50);
  const TextView=()=>{
-  (wordsToShow!==-1)?setWordsToShow(-1)://increase text
+  (wordsToShow)?setWordsToShow(undefined)://increase text
   setWordsToShow(50);// decrese text
  } 
  
@@ -80,7 +80,7 @@ const handleClick=()=>{
     <img className="SingleAritcalImage" src={data[Id].images} alt="Not Found"/>
     <div className="SingleAritcalDescription">
       {data[Id].description.split(' ').slice(0,wordsToShow).join(' ')}
-     {(wordsToShow!==-1)? <div onClick={TextView} className="showMore">⬇️ Show More</div>:<div onClick={TextView} className="showLess" >⬆️ Show Less</div>}
+     {(wordsToShow)? <div onClick={TextView} className="showMore">⬇️ Show More</div>:<div onClick={TextView} className="showLess" >⬆️ Show Less</div>}
       </div>
     <div className="writerInfo">
     <span className="clap2">

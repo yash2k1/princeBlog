@@ -13,9 +13,9 @@ const [dataObj3,setDataObj3]=useState(data[randomGenerator()]);
 
 useEffect(()=>{
  const ChangeImg= setTimeout(()=>{
-    setDataObj1(data[randomGenerator()]);
-    setDataObj2(data[randomGenerator()]);
-    setDataObj3(data[randomGenerator()]);
+   setDataObj1(data[randomGenerator()]);
+   setDataObj2(data[randomGenerator()]);
+   setDataObj3(data[randomGenerator()]);
   },5000)
   return ()=>{
     clearTimeout(ChangeImg)
