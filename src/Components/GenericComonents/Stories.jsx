@@ -17,7 +17,7 @@ const OpenSingleArtical=()=>{
 // console.log(props.counter)
   return (
     
-    <div className={props.type}>
+    <div className={props.type} id={"stories"}>
       <img className="storieImages" onClick={OpenSingleArtical} src= {props?.images} alt='Not Found'/>
       <div className="storieHeading" onClick={OpenSingleArtical}>{props?.heading?.split(' ').slice(0,6).join(' ')+"..."}</div>
       {(props.type==='type6')&& <PostedBy/>}
