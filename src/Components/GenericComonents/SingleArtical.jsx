@@ -96,10 +96,10 @@ const handleClick=()=>{
 
 <h2 className="MoreFromSirenTittle">More From Siren</h2>
 
-  <div className="MoreFromSiren" onClick={handleClick}>
-    <FilterStoriesData type={"type6"} id={RandomImg1} key={1}  />       
-    <FilterStoriesData type={"type6"} id={RandomImg2} key={2}/>       
-    <FilterStoriesData type={"type6"} id={RandomImg3} key={3}/>       
+  <div className="MoreFromSiren" >
+   <span onClick={handleClick}><FilterStoriesData type={"type6"} id={RandomImg1} key={1} /></span>        
+   <span onClick={handleClick}><FilterStoriesData type={"type6"} id={RandomImg2} key={2} /></span>        
+   <span onClick={handleClick}><FilterStoriesData type={"type6"} id={RandomImg3} key={3} /></span>        
      
   </div>
    
