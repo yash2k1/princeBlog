@@ -53,6 +53,9 @@
 display: flex;
 justify-content: center;
 }
+.SingleAritcalImage{
+  height: 400px;
+}
   /* ----------------------middle Container------------------------ */
   .middleContainer{
     display: flex;
@@ -216,6 +219,11 @@ overflow: hidden;
 .MoreFromSiren .type6 {
   margin-top: 10px;
   width: 25%;
+  height: 300px;
+
+}
+.MoreFromSiren .type6 .storieHeading  {
+overflow: hidden;
 }
 .MoreFromSiren .ProfileDate {
   font-size: 10px;
@@ -244,10 +252,12 @@ overflow: hidden;
     align-items: center;
     flex-direction: column;
     background: white;
+    height: 500px;
   }
   .MoreFromSiren .type6 {
     width: 90%;
     max-width: 500px;
+    height: 30%;
   }
 
 }

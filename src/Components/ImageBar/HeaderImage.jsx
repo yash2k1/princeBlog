@@ -10,7 +10,7 @@ const randomGenerator=()=>{
 const [dataObj1,setDataObj1]=useState(data[randomGenerator()]);
 const [dataObj2,setDataObj2]=useState(data[randomGenerator()]);
 const [dataObj3,setDataObj3]=useState(data[randomGenerator()]);
-
+// sideEffect=>setTimeout,setInterval,Api calling using fetch ,promise,generator function
 useEffect(()=>{
  const ChangeImg= setTimeout(()=>{
    setDataObj1(data[randomGenerator()]);

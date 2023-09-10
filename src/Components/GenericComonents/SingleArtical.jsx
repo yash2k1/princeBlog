@@ -25,26 +25,19 @@ const SingleArtical = () => {
   setWordsToShow(50);// decrese text
  } 
  
- const [changeIndex,setChangeIndex]=useState(0);
 //  more from siren random image logic 
-const RandomImg1=useMemo(()=>{
-    return Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
-},[changeIndex])
-const RandomImg2=useMemo(()=>{
-    return Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
-},[changeIndex])
-const RandomImg3=useMemo(()=>{
-    return Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
-},[changeIndex])
+const RandomImg1= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+
+const RandomImg2= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+
+const RandomImg3=  Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+
 //for back functionality
 function handleBack(){
   navigate(-1);
 }
 // onclicking on MORE from serien
-const handleClick=()=>{
-  setWordsToShow(50);//show less
-  setChangeIndex(!changeIndex)
-} 
+
 
   return (
     <div>
@@ -97,9 +90,9 @@ const handleClick=()=>{
 <h2 className="MoreFromSirenTittle">More From Siren</h2>
 
   <div className="MoreFromSiren" >
-   <span onClick={handleClick}><FilterStoriesData type={"type6"} id={RandomImg1} key={1} /></span>        
-   <span onClick={handleClick}><FilterStoriesData type={"type6"} id={RandomImg2} key={2} /></span>        
-   <span onClick={handleClick}><FilterStoriesData type={"type6"} id={RandomImg3} key={3} /></span>        
+   <FilterStoriesData type={"type6"} id={RandomImg1} key={1} />  
+   <FilterStoriesData type={"type6"} id={RandomImg2} key={2} />  
+   <FilterStoriesData type={"type6"} id={RandomImg3} key={3} />  
      
   </div>
    
