@@ -4,19 +4,17 @@ import FilterStoriesData from '../FilterStoriesData'
 const LatestArticle = () => {
   const data=useContext(NewsData)
 // console.log(data)
-const random=()=>{
-  return Math.floor((Math.random()*74)+1);
- }
+
   return ( 
     <>
     <h1> Latest Article</h1>
   <div className="LatestArticle">
-    <FilterStoriesData type={"type4"} id={random()} />       
-<FilterStoriesData type={"type4"} id={random()} />       
-<FilterStoriesData type={"type4"} id={random()} />       
-<FilterStoriesData type={"type4"} id={random()} />        
+    <FilterStoriesData type={"type4"} id={37} />       
+<FilterStoriesData type={"type4"} id={48} />       
+<FilterStoriesData type={"type4"} id={13} />       
+<FilterStoriesData type={"type4"} id={54} />        
 
-    <img src={data[random()].images} alt="not found" className='LatestArticleImg' />
+    <img src={data[32].images} alt="not found" className='LatestArticleImg' />
     </div>
 </>
 

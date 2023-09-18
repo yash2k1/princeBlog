@@ -1,11 +1,11 @@
 import React from 'react'
 import './PostedByStyle.css'
-const PostedBy = (props) => {
+const PostedBy = () => {
   return (
     <div className='PostedBy'>
       <img className='PostedByImg' src="/images/profile.jpg" alt="not found" />
-      <div className="ProfileName">Yash Gupta</div>
-      <div className="ProfileDate">{(props?.date)? props?.date: "Jan 28, 2019"} · 10 min read</div>
+      <div className="ProfileName">Prince Verma</div>
+      <div className="ProfileDate"> Aug 19, 2023 · 10 min read</div>
     </div>
   )
 }

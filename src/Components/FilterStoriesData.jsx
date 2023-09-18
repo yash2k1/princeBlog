@@ -6,26 +6,23 @@ function FilterStoriesData(props) {
   const data=useContext(NewsData)[props.id-1];
 //  console.log(props)
 //   console.log("nic",data.heading,props.type)
-if(props.type==="type1"){
-    return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} postBy={"fs"} categories={data.categories} />
 
-}
-else if(props.type==="type2"){
+ if(props.type==="type2"){//latest stories
     return   <Stories  id={props.id} type={props.type} heading={data.heading} description={data.description} descriptionLength={'47'} date={data.date} categories={data.categories}/>
 
-}else if(props.type==="type3"){
-    return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} description={data.description} descriptionLength={'15'} date={data.date} categories={data.categories}/>
-        
+}
+ if(props.type==="type3"){//the latest
+    return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} description={data.description} descriptionLength={'15'} date={data.date} categories={data.categories}/>  
 
-}else if(props.type==="type4"){
+}else if(props.type==="type4"){//top stories
     return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} description={data.description} descriptionLength={'9'} date={data.date} categories={data.categories}/>
 
 
-}else if(props.type==="type5"){
+}else if(props.type==="type5"){//top posts
     return   <Stories id={props.id} type={props.type} counter={props?.counter} images={data.images} heading={data.heading} date={data.date} categories={data.categories}/>
 
 
-}else if(props.type==="type6"){
+}else if(props.type==="type6"){//more from siren
     return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} categories={data.categories}/>
 
 }

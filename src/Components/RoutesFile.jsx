@@ -20,7 +20,7 @@ return(
         <Route path='/Fitness' element={<Fitness initialIds={46} name={'Fitness'}/>}/>
         <Route path='/Food' element={<Food initialIds={61} name={'Food'}/>}/>
         {/* dynamic routing to singleArical page */}
-        <Route path='/:NewsId' element={<SingleArtical/>}/>
+        {/* <Route path='/:NewsId' element={<SingleArtical/>}/> */}
         <Route path='/Bollywood/:NewsId' element={<SingleArtical/>}/>
         <Route path='/Hollywood/:NewsId' element={<SingleArtical/>}/>
         <Route path='/Technology/:NewsId' element={<SingleArtical/>}/>

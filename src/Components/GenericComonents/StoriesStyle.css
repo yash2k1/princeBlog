@@ -6,6 +6,7 @@
   
   margin-left: 10px;
 }
+
 #stories{
   margin-bottom: 15px;
 }
@@ -178,11 +179,11 @@
 }
 
 .storieDescription {
-  color: gray;
+  color: rgb(255, 255, 255);
   max-width: 250px;
 }
 .storieDate {
-  color: gray;
+  color: rgb(255, 255, 255);
   width: 90%;
 }
 .storieDate > span:nth-child(1) {

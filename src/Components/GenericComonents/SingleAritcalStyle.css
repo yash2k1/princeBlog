@@ -6,7 +6,6 @@
   height: 90px;
   border-bottom: 2px solid rgb(225, 224, 224);
 }
-
 .SingleAritcalHeader .header {
   display: flex;
   width: fit-content;
@@ -194,19 +193,19 @@ cursor: pointer;
 /* ----------------More From Siren------------------------- */
 .MoreFromSirenTittle{
   padding:10px 5%;
-  background: #fafafa;
+  background: hotpink;
   margin: 0;
 }
 .MoreFromSiren {
   display: flex;
   justify-content: space-around;
-  background: #fafafa;
+  background: hotpink;
   border-top: 2px solid #d1cfcf;
 margin-bottom: 20px;
   
 }
 .MoreFromSiren .type6:hover{
-box-shadow: 4px 2px 4px 0.7px rgb(182, 176, 176);
+box-shadow: 4px 2px 4px 0.7px rgb(248, 0, 0);
 transform: translate(2px,-2px);
 border-radius:20px ;
 padding: 4px;
@@ -251,7 +250,7 @@ overflow: hidden;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background: white;
+    background: hotpink;
     height: 500px;
   }
   .MoreFromSiren .type6 {

@@ -20,6 +20,7 @@
 
 .LatestArticle > div:nth-child(1) {
   font-size: 28px;
+  font-size: 28px;
   /* color: darkblue; */
 }
 .LatestArticle > div:not(:nth-child(1)) {
@@ -106,11 +107,20 @@ color: aqua;
 }
 .LatestStories .type2:hover,
 .TheLatest .type3:hover{
-  box-shadow: 4px 2px 4px 0.7px rgb(182, 176, 176);
+  box-shadow: 4px 2px 4px 0.7px rgb(255, 0, 0);
   transform: translate(2px,-2px);
   border-radius:20px ;
  padding: 4px;
 
+  }
+  .loadMore1{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid red;
+  }
+  .loadMore1:hover{
+   cursor: pointer;
   }
 /* .LatestStories .type2 img,
 .TheLatest .type3 img{

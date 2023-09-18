@@ -16,15 +16,14 @@ const OpenSingleArtical=()=>{
 }
 // console.log(props.counter)
   return (
-    
-    <div className={props.type} id={"stories"}>
-      <img className="storieImages" onClick={OpenSingleArtical} src= {props?.images} alt='Not Found'/>
-      <div className="storieHeading" onClick={OpenSingleArtical}>{props?.heading?.split(' ').slice(0,6).join(' ')+"..."}</div>
+
+    <div className={props.type} id="stories">
+      <img className="storieImages" onClick={OpenSingleArtical} src= {props.images} alt='Not Found'/>
+      <div className="storieHeading" onClick={OpenSingleArtical}>{props.heading.split(' ').slice(0,6).join(' ')+"..."}</div>
       {(props.type==='type6')&& <PostedBy/>}
-      <div className="storieDescription">{props?.description &&props?.description?.split(' ').slice(0,props?.descriptionLength).join(' ') +"..."}</div>
-      <div className="storiePostBy">{props?.postBy}</div>
-      <div className="storieCounter">{props?.counter}</div>
-      <div className="storieDate"><span>{props?.date && props?.categories}</span><span>{props?.date}</span></div>
+      <div className="storieDescription">{props.description &&props.description.split(' ').slice(0,props?.descriptionLength).join(' ') +"..."}</div>
+      <div className="storieCounter">{props.counter}</div>
+      <div className="storieDate"><span>{props.date && props.categories}</span><span>{props.date}</span></div>
     </div>
   )
 }

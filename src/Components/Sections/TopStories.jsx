@@ -1,22 +1,14 @@
-import React,{useContext,useState} from 'react'
+import React,{useContext} from 'react'
 import { NewsData } from '../Assets/NewsData';
 import '../Sections/SectionsStyle.css'
+import SouthIcon from '@mui/icons-material/South';
 import FilterStoriesData from '../FilterStoriesData';
 const TopStories=(props)=> {
 
 
     const data=useContext(NewsData);// getting news data 
     
-    const [load,setLoad]=useState(6)
-    // load logic
-    const increaseLoad=()=>{
-      if(load*2<15){
-        setLoad(load*2);
-      }else{
-        setLoad(15);
-      }
-    }
-    return (
+     return (
     <>
      {
      data.map((item,index)=>{
@@ -26,17 +18,11 @@ const TopStories=(props)=> {
      </div>
       )
       
-     }) .slice(props.initialIds-1,props.initialIds-1+load)    
+     }) .slice(props.initialIds,props.initialIds +8)    
      
-   
     
      }
-   {/* Load more feature works for Top stories */}
-   {load<15&&  
-    <button className="loadMore" onClick={increaseLoad} >
-      <img src='/images/arrow@2x.png' alt="not found" className="loadMoreImg"/>  <span>LOAD MORE</span>
-      </button>
-     }
+     <div className='loadMore1'><SouthIcon style={{fontSize:"15px",color:"red"}}/> Load More</div>
  
    </>
  

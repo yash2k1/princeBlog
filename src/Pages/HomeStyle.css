@@ -13,6 +13,7 @@
     height: 456px;
     object-fit: cover;
     margin-bottom: 10px;
+    width: 98%;
 }
 .mid .midSecond .SectionHoc{
     display: flex;

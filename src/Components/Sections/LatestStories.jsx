@@ -1,16 +1,14 @@
 import React from 'react'
 import FilterStoriesData from '../FilterStoriesData';
 const LatestStories = () => {
-  const random=()=>{
-    return Math.floor((Math.random()*74)+1);
-   }
+
   return (
     <>
     <h1>LatestStories</h1>
      <div className='LatestStories'>
-    <FilterStoriesData type={"type2"} id={random()} />       
-    <FilterStoriesData type={"type2"} id={random()} />       
-    <FilterStoriesData type={"type2"} id={random()} />       
+    <FilterStoriesData type={"type2"} id={3} />       
+    <FilterStoriesData type={"type2"} id={43} />       
+    <FilterStoriesData type={"type2"} id={33} />       
   
     </div>
     </>

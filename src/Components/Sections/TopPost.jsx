@@ -1,30 +1,26 @@
 import React,{useContext,useState} from 'react'
-import { NewsData } from '../Assets/NewsData';
 import '../Sections/SectionsStyle.css'
 import FilterStoriesData from '../FilterStoriesData';
 function TopPost(props) {
-const data=useContext(NewsData);// getting news data 
 
-    // console.log(count)
-    function generateRandom(){
-      return (props.isHome)?props?.initialIds+Math.floor(Math.random()*74): props?.initialIds+Math.floor(Math.random()*14)
-    }
+   let a=props.initialIds?props.initialIds:3;
+   let b=props.initialIds?props.initialIds+3:43;
+   let c=props.initialIds?props.initialIds+6:31;
+   let d=props.initialIds?props.initialIds+8:54;
+
     return (
     <div className="TopPost">
-    
-  
-
         <div>
-    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"1"} />       
+    <FilterStoriesData type={"type5"} id={a} counter={"1"} />       
      </div>
         <div>
-    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"2"} />       
+    <FilterStoriesData type={"type5"} id={b} counter={"2"} />       
      </div>
         <div>
-    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"3"} />       
+    <FilterStoriesData type={"type5"} id={c} counter={"3"} />       
      </div>
         <div>
-    <FilterStoriesData type={"type5"} id={generateRandom()} counter={"4"} />       
+    <FilterStoriesData type={"type5"} id={d} counter={"4"} />       
      </div>
       
       
