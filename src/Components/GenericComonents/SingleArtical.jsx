@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from "react";
+import React, { useContext } from "react";
 import {  useParams , useNavigate} from "react-router-dom";
 import Top from "./Header/Top";
 import { NewsData } from "../Assets/NewsData";
@@ -20,15 +20,16 @@ const SingleArtical = () => {
 //  more from siren random image logic 
 const RandomImg1= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
 const RandomImg2= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
-const RandomImg3=  Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
-
+const RandomImg3= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+// 1-15=bolly   // 5/15.01==>0.3==>0=>0*15=>0+random(1-15)
+// 16-30=holly  // 20/15.01==>1.3 ==>1=>1*15=>15+random(1-15)
+// 31-45=tech   // ==>2.something==>2=>2*15=>30+random(1-15)
+//46-60=fitness // ==>50/15.01=>3.3=>3=>3*15=>45+random(1-15)
 //for back functionality
 function handleBack(){
   navigate(-1);
 }
 // onclicking on MORE from serien
-
-
   return (
     <div>
       <div className="SingleAritcalHeader">

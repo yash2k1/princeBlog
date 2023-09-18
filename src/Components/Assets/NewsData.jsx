@@ -1,6 +1,7 @@
 import { createContext } from "react";
 
-export const NewsData = createContext([{
+export const NewsData = createContext([
+  {
   id : 1,
   categories : 'Bollywood',
   images : 'https://india.postsen.com/content/uploads/2023/09/13/64411e529b.jpg',
